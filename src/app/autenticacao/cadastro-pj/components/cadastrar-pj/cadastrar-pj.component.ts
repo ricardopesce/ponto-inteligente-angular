@@ -3,6 +3,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
+import { CadastroPJ } from '../../models';
+
 @Component({
   selector: 'app-cadastrar-pj',
   templateUrl: './cadastrar-pj.component.html',
@@ -36,7 +38,8 @@ export class CadastrarPjComponent implements OnInit {
     if (this.form.invalid) {
       return;
     }
-    alert(JSON.stringify(this.form.value));
+    const cadastroPj: CadastroPJ = this.form.value;
+    alert(JSON.stringify(cadastroPj));
   }
 
 }
