@@ -15,6 +15,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CadastrarPjComponent, CadastroPjComponent } from './components';
 import { CadastroPjRoutes } from './cadastro-pj-routing.module';
 
+import { SharedModule } from '../../shared/shared.module';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { CadastroPjRoutes } from './cadastro-pj-routing.module';
     MatListModule,
     MatTooltipModule,
     MatIconModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    SharedModule
   ]
 })
 export class CadastroPjModule { }
