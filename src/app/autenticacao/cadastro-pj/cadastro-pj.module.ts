@@ -13,7 +13,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { CadastrarPjComponent, CadastroPjComponent } from './components';
-import { CadastroPjRoutes } from './cadastro-pj-routing.module';
+//import { CadastroPjRoutes } from './cadastro-pj-routing.module';
+import { CadastrarPjService } from './services';
 
 import { SharedModule } from '../../shared/shared.module';
 
@@ -36,6 +37,9 @@ import { SharedModule } from '../../shared/shared.module';
     MatIconModule,
     MatSnackBarModule,
     SharedModule
+  ],
+  providers: [
+    CadastrarPjService
   ]
 })
 export class CadastroPjModule { }
