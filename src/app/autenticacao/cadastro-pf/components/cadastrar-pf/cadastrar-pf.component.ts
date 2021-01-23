@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { validateBasis } from '@angular/flex-layout';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router } from '@angular/router';
 
 import { CpfValidator, CnpjValidator } from '../../../../shared/validators';
+
+import { CadastroPf } from '../../models';
 
 @Component({
   selector: 'app-cadastrar-pf',
@@ -20,7 +21,7 @@ export class CadastrarPfComponent implements OnInit {
     private snackBar: MatSnackBar,
     private router: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
     this.gerarForm();
   }
 
@@ -39,7 +40,8 @@ export class CadastrarPfComponent implements OnInit {
       return;
     }
 
-    alert(JSON.stringify(this.form.value));
+    const cadastroPf: CadastroPf = this.form.value;
+    alert(JSON.stringify(cadastroPf));
 
     return false;
   }
