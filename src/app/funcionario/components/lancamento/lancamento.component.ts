@@ -93,9 +93,9 @@ export class LancamentoComponent implements OnInit {
         this.router.navigate(['/funcionario/listagem']);
       },
       err => {
-        let msg: string = "Tente novamente em instantes...";
+        let msg: string = "Tente novamente em instantes.";
         if(err.status == 400) {
-          msg = err.error.errors.join('\n');
+          msg = err.error.errors.join(' ');
         }
         this.snackBar.open(msg, "Erro", { duration: 5000 });
       }
