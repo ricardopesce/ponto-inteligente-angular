@@ -27,6 +27,8 @@ import {
   PtBrMatPaginatorIntl
 } from '../shared';
 
+import { SharedModule } from '../shared/shared.module';
+
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import {
     MatTableModule,
     MatPaginatorModule,
     MatSortModule,
-    MatCardModule
+    MatCardModule,
+    
+    SharedModule
   ],
   providers: [
     HttpUtilService,

@@ -1,13 +1,13 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/collections';
+//import { DataSource } from '@angular/cdk/collections';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { PageEvent } from '@angular/material/paginator';
+//import { PageEvent } from '@angular/material/paginator';
 import { MatPaginator } from '@angular/material/paginator';
-import { Sort } from '@angular/material/sort';
+//import { Sort } from '@angular/material/sort';
 import { MatSort } from '@angular/material/sort';
 
-import { Observable } from 'rxjs';
+//import { Observable } from 'rxjs';
 //import 'rxjs/add/observable/of';
 
 import { LancamentoService, Lancamento } from '../../../shared';

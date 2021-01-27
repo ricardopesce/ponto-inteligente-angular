@@ -3,17 +3,23 @@ import { CommonModule } from '@angular/common';
 import { MascaraDirective } from './directives/mascara.directive';
 
 //import { MatPaginatorIntl } from '@angular/material/paginator';
-import { PtBrMatPaginatorIntl } from './';
+import { PtBrMatPaginatorIntl, TipoPipe, DataPipe } from './';
 
 
 
 @NgModule({
-  declarations: [MascaraDirective],
+  declarations: [
+    MascaraDirective, 
+    TipoPipe, 
+    DataPipe
+  ],
   imports: [
     CommonModule
   ],
   exports: [
-    MascaraDirective
+    MascaraDirective,
+    TipoPipe,
+    DataPipe
   ],
   providers: [
     PtBrMatPaginatorIntl
