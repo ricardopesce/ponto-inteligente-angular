@@ -22,7 +22,10 @@ import {
   FuncionarioModule,
   FuncionarioRoutingModule 
 } from './funcionario';
-import { AdminModule } from './admin';
+import { 
+  AdminModule,
+  AdminRoutingModule
+} from './admin';
 
 @NgModule({
   declarations: [
@@ -43,6 +46,7 @@ import { AdminModule } from './admin';
     FuncionarioModule,
     FuncionarioRoutingModule,
     AdminModule,
+    AdminRoutingModule,
 
     AppRoutingModule
   ],
