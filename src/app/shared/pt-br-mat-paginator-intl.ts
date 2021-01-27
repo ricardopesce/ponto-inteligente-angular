@@ -12,8 +12,8 @@ export class PtBrMatPaginatorIntl extends MatPaginatorIntl {
             return '0 de ' + length;
         }
         length = Math.max(length, 0);
-        const startIndex = page = pageSize;
-        const endIndex = startIndex > length ? 
+        const startIndex = page * pageSize;
+        const endIndex = startIndex < length ? 
         Math.min(startIndex + pageSize, length) :
         startIndex + pageSize;
         return startIndex + 1 + ' - ' + endIndex + ' / ' + length;
