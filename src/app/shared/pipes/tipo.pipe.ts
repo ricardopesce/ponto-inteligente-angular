@@ -26,6 +26,9 @@ export class TipoPipe implements PipeTransform {
       case Tipo.TERMINO_TRABALHO:
         tipoDesc = 'Término do trabalho';
         break;
+      default:
+        tipoDesc = tipo;
+        break;
       
     }
     return tipoDesc;
