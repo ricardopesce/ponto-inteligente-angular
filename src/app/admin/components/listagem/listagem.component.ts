@@ -14,7 +14,8 @@ import {
   Lancamento,
   Funcionario,
   Tipo,
-  HttpUtilService
+  HttpUtilService,
+  FuncionarioService
 } from '../../../shared';
 
 
@@ -38,7 +39,8 @@ export class ListagemComponent implements OnInit {
     private lancamentoService: LancamentoService,
     private httpUtil: HttpUtilService,
     private snackBar: MatSnackBar,
-    private fb: FormBuilder) { }
+    private fb: FormBuilder,
+    private funcionarioService: FuncionarioService) { }
 
   ngOnInit(): void {
     this.pagina = 0;

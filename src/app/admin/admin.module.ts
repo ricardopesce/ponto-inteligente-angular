@@ -27,7 +27,8 @@ import { SharedModule } from '../shared/shared.module';
 import {
   HttpUtilService,
   LancamentoService,
-  PtBrMatPaginatorIntl
+  PtBrMatPaginatorIntl,
+  FuncionarioService
 } from '../shared';
 
 import {
@@ -74,6 +75,7 @@ import {
     LancamentoService,
     HttpUtilService,
     MatPaginatorIntl,
+    FuncionarioService,
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
     { provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl }
   ],
