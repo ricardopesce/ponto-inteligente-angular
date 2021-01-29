@@ -35,7 +35,8 @@ import {
   ListagemComponent,
   CadastroComponent,
   AtualizacaoComponent,
-  AdminComponent
+  AdminComponent,
+  ConfirmarDialog
 } from './components';
 
 
@@ -68,7 +69,8 @@ import {
     ListagemComponent, 
     CadastroComponent, 
     AtualizacaoComponent,
-    AdminComponent
+    AdminComponent,
+    ConfirmarDialog
   ],
   
   providers: [
@@ -79,5 +81,6 @@ import {
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
     { provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl }
   ],
+  entryComponents: [ ConfirmarDialog ]
 })
 export class AdminModule { }
