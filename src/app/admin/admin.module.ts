@@ -39,7 +39,7 @@ import {
   ConfirmarDialog
 } from './components';
 
-
+import { AdminGuard } from './services';
 
 @NgModule({
   imports: [
@@ -79,7 +79,8 @@ import {
     MatPaginatorIntl,
     FuncionarioService,
     { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
-    { provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl }
+    { provide: MatPaginatorIntl, useClass: PtBrMatPaginatorIntl },
+    AdminGuard
   ],
   entryComponents: [ ConfirmarDialog ]
 })
